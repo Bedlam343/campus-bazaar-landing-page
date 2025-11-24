@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import TypingInput from "src/components/ui/TypingInput";
+import openaiImage from "src/assets/images/icons/openai.png";
 
 const fadeInMotionProps = {
     initial: { opacity: 0, y: 40 },
@@ -57,7 +58,7 @@ const SmartSearch = () => {
                 </motion.p>
                 <motion.img
                     {...fadeInMotionProps}
-                    src="/icons/openai.png"
+                    src={openaiImage}
                     className="w-[50px] select-none animate-slow-spin"
                     loading="lazy"
                 />

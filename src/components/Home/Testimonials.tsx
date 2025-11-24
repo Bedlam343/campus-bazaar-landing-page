@@ -2,48 +2,55 @@ import { motion } from "motion/react";
 import TestimonialCard from "src/components/Home/TestimonialCard";
 import FloatingIcons from "src/components/Home/FloatingIcons";
 
+import devKharodImg from "src/assets/images/profiles/dev_kharod.png";
+import donovanImg from "src/assets/images/profiles/donovan.png";
+import derekImg from "src/assets/images/profiles/derek.png";
+import marthaImg from "src/assets/images/profiles/martha.png";
+import emilyImg from "src/assets/images/profiles/emily.png";
+import carlosImg from "src/assets/images/profiles/carlos.png";
+
 const testimonials = [
     {
         name: "Dev Kharod",
         detail: "Computer Science Major, UCLA",
         comment:
             "This platform made it so easy to find affordable textbooks for my courses. Highly recommend to all students!",
-        image: "/profiles/dev_kharod.png",
+        image: devKharodImg,
     },
     {
         name: "Donovan Mitchell",
         detail: "Economics Major, SJSU",
         comment:
             "I was able to sell my old laptop quickly and at a great price. The user interface is very intuitive.",
-        image: "/profiles/donovan.png",
+        image: donovanImg,
     },
     {
         name: "Derek Grim",
         detail: "Art History Major, UC Berkeley",
         comment:
             "A fantastic marketplace for students! I found unique items from fellow students that I wouldn't find anywhere else.",
-        image: "/profiles/derek.png",
+        image: derekImg,
     },
     {
         name: "Martha Vespoli",
         detail: "Mechanical Engineering Major, USC",
         comment:
             "The campus community aspect of this marketplace is what sets it apart. I felt safe and confident buying and selling here.",
-        image: "/profiles/martha.png",
+        image: marthaImg,
     },
     {
         name: "Emily Liu",
         detail: "Biology Major, UCLA",
         comment:
             "I love how easy it is to connect with other students on this platform. Found great deals on lab equipment for my classes!",
-        image: "/profiles/emily.png",
+        image: emilyImg,
     },
     {
         name: "Carlos Mendez",
         detail: "Business Major, UCSD",
         comment:
             "This marketplace has become my go-to for buying and selling items on campus. The variety of products is impressive!",
-        image: "/profiles/carlos.png",
+        image: carlosImg,
     },
 ];
 

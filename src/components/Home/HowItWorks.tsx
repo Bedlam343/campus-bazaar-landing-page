@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
 import { LucideRedo, LucideUndo } from "lucide-react";
 
+import mailImage from "src/assets/images/icons/mail_orange_yellow_gradient.png";
+import listImage from "src/assets/images/icons/list_orange_yellow_gradient.png";
+import handshakeImage from "src/assets/images/icons/handshake_orange_yellow_gradient.png";
+
 const fadeInMotionProps = {
     initial: { opacity: 0, y: 40 },
     whileInView: { opacity: 1, y: 0 },
@@ -38,10 +42,7 @@ const HowItWorks = () => {
                                 01
                             </p>
                             <div className="flex justify-center mt-[20px]">
-                                <img
-                                    src="/icons/mail_orange_yellow_gradient.png"
-                                    className="h-[150px]"
-                                />
+                                <img src={mailImage} className="h-[150px]" />
                             </div>
                         </div>
 
@@ -71,10 +72,7 @@ const HowItWorks = () => {
                                 02
                             </p>
                             <div className="flex justify-center mt-[20px]">
-                                <img
-                                    src="/icons/list_orange_yellow_gradient.png "
-                                    className="h-[150px]"
-                                />
+                                <img src={listImage} className="h-[150px]" />
                             </div>
                         </div>
 
@@ -106,7 +104,7 @@ const HowItWorks = () => {
                             </p>
                             <div className="flex justify-center mt-[20px]">
                                 <img
-                                    src="/icons/handshake_orange_yellow_gradient.png"
+                                    src={handshakeImage}
                                     className="h-[150px]"
                                 />
                             </div>

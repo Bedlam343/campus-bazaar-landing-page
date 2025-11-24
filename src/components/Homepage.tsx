@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useRef } from "react";
 
 import Introduction from "src/components/Home/Introduction";
 import SmartSearch from "src/components/Home/SmartSearch";
@@ -6,7 +7,8 @@ import Testimonials from "src/components/Home/Testimonials";
 import HowItWorks from "src/components/Home/HowItWorks";
 import Newsletter from "src/components/Home/Newsletter";
 import { Explosion } from "src/components/ui/icons";
-import { useRef } from "react";
+
+import campusBazarLogo from "src/assets/images/cb_logo_w50_gradient.png";
 
 const Home = () => {
     const introductionRef = useRef<HTMLDivElement>(null);
@@ -51,7 +53,7 @@ const Home = () => {
                         onClick={() => handleNavClick(introductionRef, "start")}
                     >
                         <img
-                            src="/cb_logo_w50_gradient.png"
+                            src={campusBazarLogo}
                             className="w-[30px] sm:w-[35px] md:w-[45px]"
                         />
                     </button>

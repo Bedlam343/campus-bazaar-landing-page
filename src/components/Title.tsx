@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useInView, motion } from "motion/react";
 
+import titleImage from "src/assets/images/cb_full_logo_w1920_gradient.png";
+
 type TitleProps = {
     animate?: boolean;
     onAnimationComplete?: () => void;
@@ -41,7 +43,7 @@ const Title = ({
         >
             <div ref={mainTitleRef} className="flex justify-center">
                 <img
-                    src="/cb_full_logo_w1920_gradient.png"
+                    src={titleImage}
                     className="w-[350px] sm:w-[400px] md:w-[500px]"
                 />
             </div>

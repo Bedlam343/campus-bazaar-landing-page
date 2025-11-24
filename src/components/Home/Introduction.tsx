@@ -3,40 +3,36 @@ import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import Title from "src/components/Title";
 
+import backgroundImage from "src/assets/images/campus_bazaar_background_w1920.png";
+const clothingImages = import.meta.glob(
+    "src/assets/images/carousel/clothing/*.png",
+    { eager: true }
+);
+const suppliesImages = import.meta.glob(
+    "src/assets/images/carousel/supplies/*.png",
+    { eager: true }
+);
+const electronicsImages = import.meta.glob(
+    "src/assets/images/carousel/electronics/*.png",
+    { eager: true }
+);
+
 type IntroductionProps = {
     onAnimationsCalled?: () => void;
     onTitleViewportLeave?: () => void;
     onTitleViewportEnter?: () => void;
 };
 
-const essentials = [
-    "/images/wooden_desk_lamp.png",
-    "/images/toothbrush_set.png",
-    "/images/orange_mini_fan.png",
-    "/images/ramen.png",
-    "/images/water_bottle.png",
-];
-const supplies = [
-    "/images/textbooks.png",
-    "/images/calculator.png",
-    "/images/color_pencils.png",
-    "/images/backpack.png",
-    "/images/markers.png",
-];
-const electronics = [
-    "/images/laptop.png",
-    "/images/yellow_headphones.png",
-    "/images/speaker.png",
-    "/images/ipad.png",
-    "/images/smartwatch.png",
-];
-const clothing = [
-    "/images/hoodie.png",
-    "/images/sneakers.png",
-    "/images/varsity_jacket.png",
-    "/images/brown_cap.png",
-    "/images/jeans.png",
-];
+const supplies = Object.values(
+    suppliesImages as Record<string, { default: string }>
+).map((module) => module.default);
+
+const electronics = Object.values(
+    electronicsImages as Record<string, { default: string }>
+).map((module) => module.default);
+const clothing = Object.values(
+    clothingImages as Record<string, { default: string }>
+).map((module) => module.default);
 
 const Introduction = ({
     onAnimationsCalled,
@@ -54,7 +50,7 @@ const Introduction = ({
             <div className="relative">
                 <div
                     style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/campus_bazaar_background_w1920.png)`,
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
                     }}
                     className="absolute inset-0 bg-cover bg-center translate-y-[-300px]"
                 />
