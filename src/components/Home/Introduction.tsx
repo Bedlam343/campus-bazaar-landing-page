@@ -54,7 +54,7 @@ const Introduction = ({
             <div className="relative">
                 <div
                     style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/campus2.jpeg)`,
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/campus_bazaar_background_w1920.png)`,
                     }}
                     className="absolute inset-0 bg-cover bg-center translate-y-[-300px]"
                 />

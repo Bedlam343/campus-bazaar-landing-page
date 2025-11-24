@@ -32,9 +32,9 @@ const Home = () => {
                 style={{
                     zIndex: 20,
                 }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.5 }}
+                // initial={{ opacity: 0, y: -20 }}
+                // animate={{ opacity: 1, y: 0 }}
+                // transition={{ duration: 0.5, delay: 1.5 }}
                 className="flex justify-center items-center w-full 
                  fixed top-[20px]
                 "
