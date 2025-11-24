@@ -41,7 +41,7 @@ const Title = ({
         >
             <div ref={mainTitleRef} className="flex justify-center">
                 <img
-                    src="/cb_full_logo_w1920_orange300.png"
+                    src="/cb_full_logo_w1920_gradient.png"
                     className="w-[350px] sm:w-[400px] md:w-[500px]"
                 />
             </div>

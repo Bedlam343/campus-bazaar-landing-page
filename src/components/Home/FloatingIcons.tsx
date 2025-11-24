@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 
-const iconTypes = [{ component: Heart, color: "text-orange-400" }];
+const iconTypes = [{ component: Heart, color: "text-[#FEB519]" }];
 
 const random = (min: number, max: number) => Math.random() * (max - min) + min;
 

@@ -51,7 +51,7 @@ const Home = () => {
                         onClick={() => handleNavClick(introductionRef, "start")}
                     >
                         <img
-                            src="/cb_logo_w50_orange300.png"
+                            src="/cb_logo_w50_gradient.png"
                             className="w-[30px] sm:w-[35px] md:w-[45px]"
                         />
                     </button>
@@ -85,8 +85,8 @@ const Home = () => {
 
                     <button
                         className="flex justify-center items-center hover:cursor-pointer
-                        min-w-[50px] md:min-w-[75px] h-[30px] md:h-[40px] hover:bg-orange-300 duration-300 ease-in-out
-                        bg-orange-400 rounded-2xl"
+                        min-w-[50px] md:min-w-[75px] h-[30px] md:h-[40px] hover:bg-orange-400 duration-300 ease-in-out
+                        bg-[#FEB519] rounded-2xl"
                     >
                         <span className="text-sm md:text-base text-gray-900 font-semibold">
                             Join

@@ -80,7 +80,7 @@ const TypingInput = ({ startAnimation }: TypingInputProps) => {
         <div
             className="relative w-[350px] sm:w-[500px] md:w-[700px]
              rounded-lg px-4 border-[1.5px] border-gray-700 h-[70px]
-             hover:border-orange-400 transition-colors flex items-center"
+             hover:border-[#FEB519] transition-colors flex items-center"
             ref={containerRef}
         >
             <span

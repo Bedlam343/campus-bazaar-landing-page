@@ -55,8 +55,8 @@ const Newsletter = () => {
                         className="h-[45px] md:h-[50px] border-[1px] border-gray-800
                         rounded-3xl w-[90%] max-w-[500px] placeholder-gray-500
                         px-4 font-roboto placeholder:italic outline-none text-gray-300
-                        hover:border-orange-400 transition-colors duration-300
-                        focus:border-orange-400"
+                        hover:border-[#FEB519] transition-colors duration-300
+                        focus:border-[#FEB519]"
                     />
                     <motion.button
                         {...fadeInMotionProps}

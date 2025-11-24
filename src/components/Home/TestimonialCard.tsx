@@ -59,7 +59,7 @@ const TestimonialCard = ({ testimonial, index }: TestimonialCardProps) => {
                         {testimonial.name}
                     </p>
                     <p
-                        className="text-sm text-orange-100 font-roboto
+                        className="text-sm text-[#FEB519] font-roboto
                         select-none"
                     >
                         {testimonial.detail}

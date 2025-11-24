@@ -83,7 +83,7 @@ const Introduction = ({
                         }}
                         className="px-4 py-1 relative
                             h-[40px] text-gray-800 cursor-pointer
-                            bg-orange-400 rounded-3xl hover:bg-orange-300
+                            bg-[#FEB519] rounded-3xl hover:bg-orange-400
                             transition-colors duration-300 ease-in-out font-semibold"
                     >
                         Join Now!
