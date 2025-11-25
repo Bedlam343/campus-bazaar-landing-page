@@ -5,6 +5,8 @@ import {
 } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
+import searchSvg from "src/assets/images/icons/search_gray300.svg";
+
 const inputs = [
     "Find a used MacBook under $800",
     "Find calculus book required for Math 101",
@@ -94,7 +96,7 @@ const TypingInput = ({ startAnimation }: TypingInputProps) => {
             </span>
 
             <img
-                src="/icons/search_gray300.svg"
+                src={searchSvg}
                 className="absolute right-5 top-1/2 -translate-y-1/2
                 md:w-[50px] w-[30px] sm:w-[40px]"
                 loading="lazy"
